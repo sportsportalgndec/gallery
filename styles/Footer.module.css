@@ -1,0 +1,128 @@
+/* Prevent horizontal scroll globally (move this to globals.css instead) */
+/* body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Footer Container */
+.footer {
+  background: #2b333b;
+  background: linear-gradient(
+    to top,
+    rgba(43, 51, 59, 1) 97%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer Grid */
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: left;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* About Section */
+.footerAbout p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Links Section */
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks ul li {
+  margin: 8px 0;
+}
+
+.footerLinks ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.footerLinks ul li a:hover {
+  color: #ff6a00;
+  transform: translateX(5px);
+}
+
+/* Social Section */
+.footerSocial .socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footerSocial .socialIcons a {
+  background: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footerSocial .socialIcons a:hover {
+  transform: scale(1.2) rotate(10deg);
+  background: #ff6a00;
+  color: #111;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footerBottom p {
+  margin: 5px 0;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footerLinks ul li a,
+  .footerAbout p {
+    font-size: 14px;
+  }
+
+  .footerSocial .socialIcons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
