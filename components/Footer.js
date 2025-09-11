@@ -27,10 +27,10 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             {/* <li><a href="/about">About</a></li> */}
-            <li><a href="/intra">Intramural Events</a></li>
-            <li><a href="/extra">Extramural Events</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="https://www.gndecsports.com/intra">Intramural Events</a></li>
+            <li><a href="https://www.gndecsports.com/extra">Extramural Events</a></li>
+            
+            <li><a href="https://www.gndecsports.com/contact">Contact</a></li>
           </ul>
         </div>
 
@@ -67,3 +67,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
