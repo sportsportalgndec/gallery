@@ -42,14 +42,14 @@ const Navbar = () => {
 
       {/* Center: Links + Mobile login */}
       <ul className={`${styles.navLinks} ${isOpen ? styles.mobileActive : ""}`}>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/awards">Awards</Link></li>
-        <li><Link href="/gallery">Gallery</Link></li>
-        <li><Link href="/contact">Contact</Link></li>
-        <li><Link href="/facilities">Facilities</Link></li>
-        <li><Link href="/intra">IntraMural</Link></li>
-        <li><Link href="/extra">ExtraMural</Link></li>
-        <li><Link href="/staff">Staff</Link></li>
+        <li><Link href="https://www.gndecsports.com">Home</Link></li>
+        <li><Link href="https://www.gndecsports.com/awards">Awards</Link></li>
+        <li><Link href="https://www.gallery.gndecsports.com">Gallery</Link></li>
+        <li><Link href="https://www.gndecsports.com/contact">Contact</Link></li>
+        <li><Link href="https://www.gndecsports.com/facilities">Facilities</Link></li>
+        <li><Link href="https://www.gndecsports.com/intra">IntraMural</Link></li>
+        <li><Link href="https://www.gndecsports.com/extra">ExtraMural</Link></li>
+        <li><Link href="https://www.gndecsports.com/staff">Staff</Link></li>
 
         {/* Mobile-only login */}
         <li className={styles.mobileLogin}>
@@ -66,3 +66,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
