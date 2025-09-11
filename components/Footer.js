@@ -25,7 +25,7 @@ const Footer = () => {
         <div className={styles.footerLinks}>
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="https://www.gndecsports.com">Home</a></li>
             {/* <li><a href="/about">About</a></li> */}
             <li><a href="https://www.gndecsports.com/intra">Intramural Events</a></li>
             <li><a href="https://www.gndecsports.com/extra">Extramural Events</a></li>
@@ -67,4 +67,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
