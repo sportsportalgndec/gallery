@@ -60,30 +60,9 @@
   display: none;
 }
 
-/* ================= REGISTRATION BAR ================= */
 
-.registrationBar {
-  width: 100%;
-  background: linear-gradient(90deg, #ff1e2d, #ff4b5c);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  padding: 14px 20px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  cursor: pointer;
-}
 
-.registrationText {
-  color: #ffffff;
-}
 
-.clickHere {
-  color: #000000;
-  font-weight: 800;
-}
 
 /* ================= MOBILE ================= */
 
