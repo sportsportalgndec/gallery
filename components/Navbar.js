@@ -8,7 +8,7 @@ import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -16,20 +16,6 @@ const Navbar = () => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
-  const handleRegistrationClick = () => {
-    const today = new Date();
-    const registrationOpenDate = new Date("2026-02-09");
-
-    if (today >= registrationOpenDate) {
-      window.open(
-        "https://athletic.gndecsports.com/register",
-        "_blank"
-      );
-    } else {
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 3000);
-    }
-  };
 
   return (
     <>
@@ -75,22 +61,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* 🔴 Registration Bar */}
-      <div
-        className={styles.registrationBar}
-        onClick={handleRegistrationClick}
-      >
-        <span className={styles.registrationText}>
-          Registrations for the 65<sup>th</sup> Annual Athletic Championship
-        </span>
-        <span className={styles.clickHere}>Click Here</span>
-      </div>
-
-      {showPopup && (
-        <div className={styles.popupMessage}>
-          ❌ Sorry! Registration opens from <strong>9 February</strong>
-        </div>
-      )}
+     
     </>
   );
 };
